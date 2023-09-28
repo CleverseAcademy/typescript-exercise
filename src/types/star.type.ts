@@ -1,8 +1,8 @@
 export interface PrintInterface {
-  character: "+" | " "
+  character: "*" | " "
   amount: number
 }
 
-export type StarFunctionReturningString = (lineNumber: number) => string
-export type StarFunctionReturningArrayOfString = (lineNumber: number) => string[]
-export type StarFunctionReturningArrayOfInterface = (lineNumber: number) => PrintInterface[]
+export type StarFunctionReturningString = (totalLine: number, currentLineNumber: number) => string
+export type StarFunctionReturningArrayOfString = (totalLine: number, currentLineNumber: number) => string[]
+export type StarFunctionReturningArrayOfInterface = (totalLine: number, currentLineNumber: number) => PrintInterface[]
